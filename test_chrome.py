@@ -21,7 +21,7 @@ def browser():
     yield driver
     driver.quit()
     
-def test_search(browser):
+def xtest_search(browser):
     browser.get('http://duckduckgo.com')
     # <link title="DuckDuckGo" type="application/opensearchdescription+xml" rel="search" href="https://duckduckgo.com/opensearch.xml?atb=v194-2__">
     assert(browser.title[:10] == 'DuckDuckGo' )
